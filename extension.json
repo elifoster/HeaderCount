@@ -1,0 +1,25 @@
+{
+    "name": "HeaderCount",
+    "version": "1.0.0",
+    "author": "Eli Foster",
+    "url": "TODO",
+    "descriptionmsg": "headercount-desc",
+    "type": "parserhooks",
+    "MessageDirs": {
+        "HeaderCount": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "HeaderCountHooks": "HeaderCount.hooks.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": [
+            "HeaderCountHooks::setupParser"
+        ]
+    },
+    "ExtensionMessageFiles": {
+        "HeaderCount": "HeaderCount.i18n.php",
+        "HeaderCountMagic": "HeaderCount.i18n.magic.php"
+    }
+}
