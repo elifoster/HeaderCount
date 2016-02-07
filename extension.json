@@ -2,7 +2,7 @@
     "name": "HeaderCount",
     "version": "1.0.0",
     "author": "Eli Foster",
-    "url": "TODO",
+    "url": "https://github.com/elifoster/HeaderCount",
     "descriptionmsg": "headercount-desc",
     "type": "parserhooks",
     "MessageDirs": {

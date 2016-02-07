@@ -13,7 +13,7 @@ $wgExtensionCredits['parserhooks'][] = array(
     'name' => 'HeaderCount',
     'descriptionmsg' => 'headercount-desc',
     'author' => 'Eli Foster',
-    'url' => 'TODO'
+    'url' => 'https://github.com/elifoster/HeaderCount'
 );
 
 $wgAutoloadClasses['HeaderCountHooks'] = __DIR__ . '/HeaderCount.hooks.php';
