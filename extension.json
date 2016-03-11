@@ -1,6 +1,6 @@
 {
     "name": "HeaderCount",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Eli Foster",
     "url": "https://github.com/elifoster/HeaderCount",
     "descriptionmsg": "headercount-desc",
@@ -18,7 +18,7 @@
             "HeaderCountHooks::setupParser"
         ]
     },
-    "ExtensionMessageFiles": {
+    "ExtensionMessagesFiles": {
         "HeaderCount": "HeaderCount.i18n.php",
         "HeaderCountMagic": "HeaderCount.i18n.magic.php"
     }

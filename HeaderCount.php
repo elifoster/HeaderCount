@@ -4,7 +4,7 @@
  *
  * @file
  * @ingroup Extensions
- * @version 1.0.0
+ * @version 1.0.1
  * @author Eli Foster <elifosterwy@gmail.com>
  */
 
@@ -18,7 +18,7 @@ $wgExtensionCredits['parserhooks'][] = array(
 
 $wgAutoloadClasses['HeaderCountHooks'] = __DIR__ . '/HeaderCount.hooks.php';
 
-$wgMessagesDirs['HeaderCount'] = __DIR__."/i18n";
+$wgMessagesDirs['HeaderCount'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['HeaderCount'] = __DIR__ . '/HeaderCount.i18n.php';
 $wgExtensionMessagesFiles['HeaderCountMagic'] = __DIR__ . '/HeaderCount.i18n.magic.php';
 
