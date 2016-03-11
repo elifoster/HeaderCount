@@ -16,9 +16,9 @@ class HeaderCountHooks {
         }
 
         $rev = Revision::newFromTitle($title);
-		if ($rev === null) {
+        if ($rev === null) {
             return "'''Could not retrieve revision from $title.'''";
-		}
+        }
 
         $content = $rev->getContent(Revision::RAW);
         if ($content === null) {
