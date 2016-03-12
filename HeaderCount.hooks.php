@@ -14,15 +14,22 @@ class HeaderCountHooks {
                 return "'''$title does not exist!'''";
             }
         }
+
         $rev = Revision::newFromTitle($title);
+        if ($rev === null) {
+            return "'''Could not retrieve revision from $title.'''";
+        }
+
         $content = $rev->getContent(Revision::RAW);
-        if ($content == null) {
+        if ($content === null) {
             return "'''Could not extract text from $title.'''";
         }
+
         $level = empty($level) ? 2 : intval($level);
         $header = str_repeat('=', $level);
         $serialized = $content->serialize();
         $count = preg_match_all("/^$header" . "[^=]+" . "$header$/m", $serialized);
+
         return $count == false ? 0 : $count;
     }
 }
