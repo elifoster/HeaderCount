@@ -11,7 +11,7 @@ class HeaderCountHooks {
         } else {
             $title = Title::newFromText($page);
             if (!$title->exists()) {
-                return "'''$title does not exist!'''";
+                return "'''$title does not exist.'''";
             }
         }
 
