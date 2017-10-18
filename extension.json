@@ -4,7 +4,7 @@
     "author": "Eli Foster",
     "url": "https://github.com/elifoster/HeaderCount",
     "descriptionmsg": "headercount-desc",
-    "type": "parserhooks",
+    "type": "parserhook",
     "MessageDirs": {
         "HeaderCount": [
             "i18n"
