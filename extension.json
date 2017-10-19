@@ -2,9 +2,10 @@
     "name": "HeaderCount",
     "version": "1.0.3",
     "author": "Eli Foster",
-    "url": "https://github.com/elifoster/HeaderCount",
+    "url": "https://mediawiki.org/wiki/Extension:HeaderCount",
     "descriptionmsg": "headercount-desc",
     "type": "parserhook",
+    "license-name": "MIT",
     "MessageDirs": {
         "HeaderCount": [
             "i18n"
