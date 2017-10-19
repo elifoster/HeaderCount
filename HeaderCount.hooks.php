@@ -1,11 +1,11 @@
 <?php
 
 class HeaderCountHooks {
-    static public function setupParser(Parser &$parser) {
+    public static function setupParser(Parser &$parser) {
         $parser->setFunctionHook('headcount', 'HeaderCountHooks::renderHeadCount');
     }
 
-    static public function renderHeadCount(Parser &$parser, $page = '', $level = '') {
+    public static function renderHeadCount(Parser &$parser, $page = '', $level = '') {
         if (empty($page)) {
             $title = $parser->getTitle();
         } else {
