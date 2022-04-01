@@ -1,5 +1,8 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
+
 class HeaderCountHooks {
     public static function setupParser(Parser &$parser) {
         $parser->setFunctionHook('headcount', 'HeaderCountHooks::renderHeadCount');
@@ -15,12 +18,13 @@ class HeaderCountHooks {
             }
         }
 
-        $rev = Revision::newFromTitle($title);
+		$rev = MediaWikiServices::getInstance()
+			->getRevisionLookup()->getRevisionByTitle($title);
         if ($rev === null) {
             return "'''Could not retrieve revision from $title.'''";
         }
 
-        $content = $rev->getContent(Revision::RAW);
+        $content = $rev->getContent(RevisionRecord::RAW);
         if ($content === null) {
             return "'''Could not extract text from $title.'''";
         }
