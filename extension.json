@@ -14,13 +14,17 @@
     "AutoloadClasses": {
         "HeaderCountHooks": "HeaderCount.hooks.php"
     },
+    "HookHandlers": {
+        "main": {
+            "class": "HeaderCountHooks"
+        }
+    },
     "Hooks": {
-        "ParserFirstCallInit": [
-            "HeaderCountHooks::setupParser"
-        ]
+        "ParserFirstCallInit": "main"
     },
     "ExtensionMessagesFiles": {
         "HeaderCount": "HeaderCount.i18n.php",
         "HeaderCountMagic": "HeaderCount.i18n.magic.php"
-    }
+    },
+    "manifest_version": 2
 }
