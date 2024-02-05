@@ -1,6 +1,6 @@
 {
     "name": "HeaderCount",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "Eli Foster",
     "url": "https://mediawiki.org/wiki/Extension:HeaderCount",
     "descriptionmsg": "headercount-desc",

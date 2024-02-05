@@ -1,5 +1,8 @@
 # Changelog
 ## Version 1
+### 1.0.5
+* Update for MediaWiki 1.39
+
 ### 1.0.4
 * Update extension metadata (shown in Special:Version)
   * Update URL to point to MediaWiki page instead of GitHub repository
