@@ -1,5 +1,8 @@
 # Changelog
 ## Version 1
+### 1.0.6
+* #headcount function no longer determines the number of headers with regex. It now parses the provided page and gets the number of sections from the page's TOCData. This is a more accurate method, and fixes it not outputting correctly for sections that have been transcluded into the page by a template, as well as sections with = in the name.
+
 ### 1.0.5
 * Update for MediaWiki 1.39
 
